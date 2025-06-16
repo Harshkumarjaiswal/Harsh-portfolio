@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Kumar - Software Engineer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">HK</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting" id="dynamic-greeting">Hello,</span>
+                        <span class="hero-name-suffix"> I'm</span>
+                        <span class="name">Harsh Kumar</span>
+                    </h1>
+                    <p class="hero-subtitle" id="looping-subtitle"></p>
+                    <p class="hero-description">
+                        Currently working as an intern at Celebal Technology as an App Modernization specialist since June 2025, I'm passionate about building efficient, user-centric web applications and scalable backend systems. 
+                        Pursuing my Master of Computer Applications (MCA) at Lovely Professional University with a strong 
+                        foundation in Java, C++, JavaScript, and Python.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-code"></i>
+                            View Projects
+                        </a>
+                        <a href="./assets/Harsh_Kumar_Resume.pdf" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="Portfolio/Harsh new photo.jpg" alt="Harsh Kumar" class="profile-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>
+                        I've been working as an App Modernization professional intern at Celebal Technologies since June 2025, 
+                        and I enjoy applying technology to address practical issues. With a strong background in Python packages, 
+                        JavaScript, C++, and Java, I actively use my knowledge to modernize outdated systems and develop useful 
+                        applications.
+                    </p>
+                    <p>
+                        I'm always looking for possibilities to experiment with new technologies, work with like-minded people, and make a significant contribution to creative projects because I'm curious and want to learn. As an NSS Volunteer, I actively participate and have earned a spot as a finalist in the TRINETRA Hackathon.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <h4>Date of Birth</h4>
+                                <p>September 16, 2003</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>Master of Computer Applications (MCA) at Lovely Professional University | CGPA: 7.44</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Current Role</h4>
+                                <p>App Modernization Intern at Celebal Technology (Since June 2025)</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>Achievements</h4>
+                                <p>TRINETRA Hackathon Finalist, Active NSS Volunteer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Months Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Education</h2>
+                <p class="section-subtitle">My professional journey and academic background</p>
+            </div>
+            <div class="experience-content">
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>App Modernization Intern</h3>
+                            <span class="company">Celebal Technology</span>
+                            <span class="duration">June 2025 - Present</span>
+                        </div>
+                        <p>Currently working on app modernization projects, applying modern development practices and technologies to enhance existing applications.</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>Intern</h3>
+                            <span class="company">Buck Softech Private Limited, Ranchi</span>
+                            <span class="duration">March 2024 - April 2024</span>
+                        </div>
+                        <ul>
+                            <li>Accomplished job training in website designing, implementing API integration that improved data retrieval speed by 30%</li>
+                            <li>Developed dynamic and responsive applications using foundational web frameworks</li>
+                            <li>Optimized web components, increasing user engagement and page load speed</li>
+                            <li>Tech stack: HTML, CSS, Bootstrap, JavaScript, MongoDB and Rest APIs</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="education-grid">
+                    <h3>Educational Background</h3>
+                    <div class="education-items">
+                        <div class="education-item current">
+                            <div class="education-header">
+                                <h4>Master of Computer Applications (MCA)</h4>
+                                <span class="institution">Lovely Professional University, Punjab, India</span>
+                                <span class="duration">August 2024 - Present</span>
+                            </div>
+                            <p class="gpa">CGPA: 7.44</p>
+                            <div class="status-badge">Current</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4>Bachelor of Science in Information Technology</h4>
+                                <span class="institution">Gossner College, Ranchi, Jharkhand</span>
+                                <span class="duration">November 2021 - June 2024</span>
+                            </div>
+                            <p class="gpa">CGPA: 8.03</p>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4>Intermediate in Science</h4>
+                                <span class="institution">ST JOSEPH'S +2 SCHOOL, Mahuadanr, Jharkhand</span>
+                                <span class="duration">April 2019 - July 2021</span>
+                            </div>
+                            <p class="gpa">Percentage: 65.6%</p>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4>Matriculation</h4>
+                                <span class="institution">ST JOSEPH'S SCHOOL, Mahuadanr, Jharkhand</span>
+                                <span class="duration">2018 - 2019</span>
+                            </div>
+                            <p class="gpa">Percentage: 79.80%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications-grid">
+                    <h3>Certifications</h3>
+                    <div class="certification-items">
+                        <div class="certification-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Git and GitHub</h4>
+                                <p>Geekster - December 2024</p>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Networking Basics</h4>
+                                <p>Cisco Networking Academy - December 2024</p>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Software Engineering and Methodologies</h4>
+                                <p>Saylor.org Academy - November 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements-grid">
+                    <h3>Achievements</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>TRINETRA Hackathon Finalist</h4>
+                                <p>Secured a finalist position and ranked 6th among 120+ teams for developing Buddy Fix – a crowdsourced problem-solving platform. (Feb'2025)</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <div>
+                                <h4>Active NSS Volunteer</h4>
+                                <p>Contributed to a Slum Development Camp, leading initiatives for community service, social awareness, and upliftment activities. (June 2024)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-text">
+                    <p>
+                        With expertise in Java, C++, JavaScript, and Python, I specialize in web development frameworks 
+                        and modern tools. My experience includes working with databases like MySQL and MongoDB, 
+                        version control with Git/GitHub, and automation tools like Selenium IDE.
+            </p>
+        </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <span>C++</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-bootstrap"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Automation & Others</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Selenium IDE</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-users"></i>
+                                <span>Collaborative</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Adaptive</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-comments"></i>
+                                <span>Communicative</span>
+                            </div>
+                        </div>
+        </div>
+    </div>
+</div>
+    </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" alt="Cloud Nest Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Harshkumarjaiswal/Cloud-Storage-App.git" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cloud Nest – Cloud-Based File Storage System</h3>
+                        <p>Designed and developed a secure desktop application for cloud-based file storage using Java Swing/AWT featuring a responsive, event-driven Interface. Implemented user authentication, file operations, and Supabase Cloud Storage integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Swing/AWT</span>
+                            <span class="tech-tag">Maven</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=250&fit=crop&crop=center" alt="Buddy Fix Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Harshkumarjaiswal/BuddyFix.git" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Buddy Fix – Crowdsourced Problem-Solving Platform</h3>
+                        <p>Created an interactive platform that allows users to submit and solve problems collaboratively. Built with MongoDB backend, integrated APIs for live locations and SMS alerts, and implemented an AI chatbot for real-time assistance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">NodeJS</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?w=400&h=250&fit=crop&crop=center" alt="Weather Predictor Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Harshkumarjaiswal/Weather-App" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Predictor</h3>
+                        <p>Developed a weather application using Rapid API to fetch data from various locations. Utilized geolocation services to provide weather details based on user's current location with optimized API requests for improved performance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop&crop=center" alt="Banking System Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Harshkumarjaiswal/Banking-System" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Banking System Software</h3>
+                        <p>Applied customer account management including deposits, withdrawals, and fund transfers with user authentication. Merged MySQL and MS Access for secure data storage and built an interactive UI using Java Swing/JavaFX.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">MS Access</span>
+                            <span class="tech-tag">Swing/JavaFX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's collaborate and do some adventure</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Always open to networking, collaboration, and exciting project opportunities!</p>
+                    <div class="contact-methods">
+                        <a href="mailto:jaiswalharshjaiswal@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>jaiswalharshjaiswal@gmail.com</span>
+                        </a>
+                        <a href="tel:+919430143755" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9430143755</span>
+                        </a>
+                        <a href="https://github.com/Harshkumarjaiswal" class="contact-method" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/Harshkumarjaiswal</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harsh-kumar-010690228" class="contact-method" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/harsh-kumar</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Harsh Kumar. All rights reserved.</p>
+    </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/harsh-kumar-010690228" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Harshkumarjaiswal" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/i_harshjaiswal?t=ut350T50v8kflBhwRPLqJg&s=08" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/__being_harsh?igsh=MW94cDVtazdka2didA==" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
