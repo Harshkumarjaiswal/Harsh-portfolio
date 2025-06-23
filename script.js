@@ -8,26 +8,8 @@ const dynamicGreeting = document.getElementById('dynamic-greeting');
 const heroSubtitle = document.querySelector('.hero-subtitle');
 const loopingSubtitle = document.getElementById('looping-subtitle');
 
-// Theme Management
-let currentTheme = localStorage.getItem('theme') || 'light';
-document.documentElement.setAttribute('data-theme', currentTheme);
-updateThemeIcon();
-
-function toggleTheme() {
-    currentTheme = currentTheme === 'light' ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    localStorage.setItem('theme', currentTheme);
-    updateThemeIcon();
-}
-
-function updateThemeIcon() {
-    const icon = themeToggle.querySelector('i');
-    if (currentTheme === 'dark') {
-        icon.className = 'fas fa-sun';
-    } else {
-        icon.className = 'fas fa-moon';
-    }
-}
+// Set default theme to dark
+document.documentElement.setAttribute('data-theme', 'dark');
 
 // Mobile Menu Toggle
 function toggleMobileMenu() {
@@ -70,14 +52,8 @@ function updateNavbarBackground() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
         navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        if (currentTheme === 'dark') {
-            navbar.style.background = 'rgba(17, 24, 39, 0.98)';
-        }
     } else {
         navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        if (currentTheme === 'dark') {
-            navbar.style.background = 'rgba(17, 24, 39, 0.95)';
-        }
     }
 }
 
@@ -360,9 +336,6 @@ function showLoadingAnimation() {
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme toggle
-    themeToggle.addEventListener('click', toggleTheme);
-    
     // Mobile menu toggle
     menuToggle.addEventListener('click', toggleMobileMenu);
     
@@ -407,12 +380,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Keyboard shortcuts
 document.addEventListener('keydown', (e) => {
-    // Ctrl/Cmd + K to toggle theme
-    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-        e.preventDefault();
-        toggleTheme();
-    }
-    
     // Escape to close mobile menu
     if (e.key === 'Escape' && navMenu.classList.contains('active')) {
         toggleMobileMenu();
@@ -471,4 +438,38 @@ style.textContent = `
         width: 100%;
     }
 `;
-document.head.appendChild(style); 
+document.head.appendChild(style);
+
+// Scroll-triggered fade/slide-in animation
+function animateOnScroll() {
+    const animatedEls = document.querySelectorAll('.section-header, .project-card, .skill-category, .experience-card, .education-item, .achievement-item, .stat-item');
+    animatedEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+            el.classList.add('visible');
+        }
+    });
+}
+window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('DOMContentLoaded', animateOnScroll);
+
+// Animated skill bars
+function animateSkillBars() {
+    const skillBars = document.querySelectorAll('.skill-bar-fill');
+    skillBars.forEach(bar => {
+        const percent = bar.getAttribute('data-skill') || 0;
+        bar.style.width = percent + '%';
+    });
+}
+function skillsSectionInView() {
+    const skillsSection = document.getElementById('skills');
+    if (!skillsSection) return false;
+    const rect = skillsSection.getBoundingClientRect();
+    return rect.top < window.innerHeight - 60;
+}
+window.addEventListener('scroll', () => {
+    if (skillsSectionInView()) animateSkillBars();
+});
+window.addEventListener('DOMContentLoaded', () => {
+    if (skillsSectionInView()) animateSkillBars();
+}); 
