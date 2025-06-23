@@ -17,6 +17,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- SVG Blob ClipPath for Profile Image -->
+    <svg width="0" height="0" style="position:absolute">
+      <defs>
+        <clipPath id="blobClipPath" clipPathUnits="objectBoundingBox">
+          <path d="M0.8,0.1 C0.95,0.2,1,0.5,0.9,0.7 C0.8,0.95,0.5,1,0.3,0.9 C0.1,0.8,0,0.5,0.1,0.3 C0.2,0.1,0.5,0,0.8,0.1 Z" />
+        </clipPath>
+      </defs>
+    </svg>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -32,9 +41,6 @@
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="nav-toggle">
-                <button class="theme-toggle" id="themeToggle">
-                    <i class="fas fa-moon"></i>
-                </button>
                 <button class="menu-toggle" id="menuToggle">
                     <span></span>
                     <span></span>
@@ -69,16 +75,17 @@
                             <i class="fas fa-code"></i>
                             View Projects
                         </a>
-                        <a href="./assets/Harsh_Kumar_Resume.pdf" class="btn btn-secondary" download>
+                        <a href="./harshkumarIntern.pdf" class="btn btn-secondary" download>
                             <i class="fas fa-download"></i>
                             Download Resume
                         </a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="image-container">
-                        <img src="Portfolio/Harsh new photo.jpg" alt="Harsh Kumar" class="profile-image">
+                    <div class="image-container stylish-profile">
+                        <img src="Portfolio/harshpic.JPG" alt="Harsh Kumar Stylish Photo" class="profile-image">
                         <div class="image-overlay"></div>
+                        <div class="stylish-profile-reflection"></div>
                     </div>
                 </div>
             </div>
@@ -303,18 +310,22 @@
                             <div class="skill-item">
                                 <i class="fab fa-java"></i>
                                 <span>Java</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="90"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fas fa-code"></i>
                                 <span>C++</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="85"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fab fa-js"></i>
                                 <span>JavaScript</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="80"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fab fa-python"></i>
                                 <span>Python</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="75"></div></div>
                             </div>
                         </div>
                     </div>
@@ -324,18 +335,22 @@
                             <div class="skill-item">
                                 <i class="fab fa-html5"></i>
                                 <span>HTML</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="95"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fab fa-css3-alt"></i>
                                 <span>CSS</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="90"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fab fa-bootstrap"></i>
                                 <span>Bootstrap</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="85"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fab fa-react"></i>
                                 <span>React</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="70"></div></div>
                             </div>
                         </div>
                     </div>
@@ -345,18 +360,22 @@
                             <div class="skill-item">
                                 <i class="fas fa-database"></i>
                                 <span>MySQL</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="85"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fas fa-leaf"></i>
                                 <span>MongoDB</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="80"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fab fa-git-alt"></i>
                                 <span>Git</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="90"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fab fa-github"></i>
                                 <span>GitHub</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="90"></div></div>
                             </div>
                         </div>
                     </div>
@@ -366,18 +385,22 @@
                             <div class="skill-item">
                                 <i class="fas fa-robot"></i>
                                 <span>Selenium IDE</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="70"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fas fa-users"></i>
                                 <span>Collaborative</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="95"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fas fa-sync-alt"></i>
                                 <span>Adaptive</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="90"></div></div>
                             </div>
                             <div class="skill-item">
                                 <i class="fas fa-comments"></i>
                                 <span>Communicative</span>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-skill="95"></div></div>
                             </div>
                         </div>
         </div>
